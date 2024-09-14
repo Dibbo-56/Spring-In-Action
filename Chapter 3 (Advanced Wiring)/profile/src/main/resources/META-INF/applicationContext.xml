@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <beans profile="Dev">
+        <bean id="devUser" class="org.example.dto.UserDto">
+            <property name="id" value="5"/>
+            <property name="name" value="devuser"/>
+            <property name="email" value="devuser@gmail.com"/>
+        </bean>
+    </beans>
+
+    <beans profile="Test">
+        <bean id="testUser" class="org.example.dto.UserDto">
+            <property name="id" value="6"/>
+            <property name="name" value="testuser"/>
+            <property name="email" value="testuser@gmail.com"/>
+        </bean>
+    </beans>
+</beans>

@@ -1,0 +1,11 @@
+*.class
+*.idea
+*.iml
+*.log
+target
+build
+out
+gradle
+.gradle
+gradlew
+gradlew.bat
